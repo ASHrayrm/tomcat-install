@@ -6,12 +6,6 @@ echo -e "#                    Tomcat Installation                       #"
 echo -e "#                                                              #"
 echo -e "################################################################"
 
-# Installing necessary packages
-echo -e "\n\n*****Installing Necessary Packages"
-sudo yum update -y 1>/dev/null
-sudo yum install -y java-11-openjdk wget 1>/dev/null
-echo "            -> Done"
-
 # Downloading Apache Tomcat 9.0.68 version to OPT folder
 echo "*****Downloading Apache Tomcat 9.0.68 version"
 cd /opt
