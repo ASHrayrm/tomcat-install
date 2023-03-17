@@ -8,6 +8,7 @@ echo -e "################################################################"
 
 # Downloading Apache Tomcat 9.0.68 version to OPT folder
 echo "*****Downloading Apache Tomcat 9.0.68 version"
+sudo yum install wget
 cd /opt
 sudo systemctl stop tomcat
 sudo rm -rf apache* tomcat*
