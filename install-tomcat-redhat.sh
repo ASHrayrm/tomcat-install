@@ -13,17 +13,17 @@ cd /opt
 sudo systemctl stop tomcat
 sudo rm -rf apache* tomcat*
 sudo mkdir -p /opt/tomcat
-sudo wget -q https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.68/bin/apache-tomcat-9.0.68.tar.gz 1>/dev/null
-sudo tar xf apache-tomcat-9.0.68.tar.gz -C /opt/tomcat 1>/dev/null
-sudo rm -rf apache-tomcat-9.0.68.tar.gz
+sudo wget -q https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.73/bin/apache-tomcat-9.0.73.tar.gz 1>/dev/null
+sudo tar xf apache-tomcat-9.0.73.tar.gz -C /opt/tomcat 1>/dev/null
+sudo rm -rf apache-tomcat-9.0.73.tar.gz
 echo "            -> Done"
 
 # Configuring Tomcat server for manager, host-manager and Credential
 echo "*****Configuring Tomcat server for manager, host-manager and Credentials"
 cd - 1>/dev/null
-sudo cp context.xml /opt/tomcat/apache-tomcat-9.0.68/webapps/manager/META-INF/context.xml
-sudo cp context.xml /opt/tomcat/apache-tomcat-9.0.68/webapps/host-manager/META-INF/context.xml
-sudo cp tomcat-users.xml /opt/tomcat/apache-tomcat-9.0.68/conf/tomcat-users.xml
+sudo cp context.xml /opt/tomcat/apache-tomcat-9.0.73/webapps/manager/META-INF/context.xml
+sudo cp context.xml /opt/tomcat/apache-tomcat-9.0.73/webapps/host-manager/META-INF/context.xml
+sudo cp tomcat-users.xml /opt/tomcat/apache-tomcat-9.0.73/conf/tomcat-users.xml
 echo "            -> Done"
 
 # Configuring Tomcat as a Service
